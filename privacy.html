@@ -1,75 +1,45 @@
 <!doctype html>
 <html lang="ja">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PLACE TRACE — プライバシーポリシー</title>
-<style>
-  :root { color-scheme: light dark; --fg:#12242e; --muted:#5b6f79; --bg:#f7f9fa; --card:#fff; --line:#dde5e9; --accent:#0f7f78; }
-  @media (prefers-color-scheme: dark) {
-    :root { --fg:#e6eef1; --muted:#9db0b9; --bg:#0b1c26; --card:#12262f; --line:#22404c; --accent:#48ccc0; }
-  }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--fg);
-         font:16px/1.8 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; }
-  .wrap { max-width:720px; margin:0 auto; padding:40px 20px 72px; }
-  h1 { font-size:1.5rem; margin:0 0 4px; }
-  h2 { font-size:1.02rem; margin:30px 0 6px; }
-  .lead { color:var(--muted); margin:0 0 24px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 22px; margin:20px 0; }
-  a { color:var(--accent); }
-  footer { color:var(--muted); font-size:.85rem; margin-top:40px; border-top:1px solid var(--line); padding-top:16px; }
-  ul { padding-left:1.2em; }
-</style>
-<div class="wrap">
-  <h1>プライバシーポリシー</h1>
-  <p class="lead">PLACE TRACE（以下「本アプリ」）における個人情報等の取り扱いについて定めます。</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>PLACE TRACE プライバシーポリシー</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <span class="mark" aria-hidden="true">⌖</span>
+      <div>
+        <p class="eyebrow">PLACE TRACE</p>
+        <h1>プライバシーポリシー</h1>
+      </div>
+    </header>
+    <p class="date">施行日：2026年9月15日</p>
 
-  <div class="card">
-    <strong>要約：本アプリは、利用者の個人情報を収集しません。</strong><br>
-    アカウント登録はありません。位置情報は端末の外に出ません。広告SDK・分析SDK・トラッキングは一切使用していません。
-  </div>
-
-  <h2>1. 収集しない情報</h2>
-  <p>本アプリは、氏名・メールアドレス・電話番号・住所・端末識別子・広告識別子・利用状況の統計を含め、利用者を識別しうる情報を一切収集せず、開発者のサーバーへ送信しません。開発者はサーバーを運用していません。</p>
-
-  <h2>2. 位置情報の取り扱い</h2>
-  <ul>
-    <li>位置情報は、利用者が画面上で「現在地を地図に表示」を明示的に操作したときにのみ、単発で取得します。</li>
-    <li>取得した位置情報は、その場で地図にピンを表示するためだけに端末内で使用します。</li>
-    <li>位置情報の履歴は保存しません。開発者を含む第三者へ送信・提供・販売しません。</li>
-    <li>バックグラウンドでの位置情報の取得、常時測位、接近通知は実装していません。</li>
-    <li>位置情報の利用を許可しなくても、地名検索を含む本アプリの主要機能はそのまま利用できます。許可はいつでも iOS の「設定」から変更できます。</li>
-  </ul>
-
-  <h2>3. 端末内に保存される情報</h2>
-  <p>利用者が保存した地域の一覧のみを、端末内のアプリ領域に保存します。この情報は外部へ送信されません。本アプリを削除すると、この情報も端末から削除されます。</p>
-
-  <h2>4. 第三者への通信</h2>
-  <ul>
-    <li><strong>地図表示</strong>：Apple の MapKit を使用しており、地図の表示にあたって Apple との通信が発生します。この通信は Apple のプライバシーポリシーに従います。</li>
-    <li><strong>出典リンク</strong>：出典画面のリンクを利用者がタップした場合、端末の標準ブラウザで外部サイトが開きます。</li>
-  </ul>
-  <p>これら以外に、本アプリが外部と通信することはありません。</p>
-
-  <h2>5. 表示するデータについて</h2>
-  <p>本アプリが表示する件数は、警視庁が公表する町丁目単位の集計統計であり、個人を特定する情報、個別の事件記録、特定の建物・部屋に関する情報を含みません。</p>
-  <p>出典：「区市町村の町丁別、罪種別及び手口別認知件数」東京都・警視庁（令和7年／2025年1月〜12月）。渋谷区80地域分を抽出・再集計して表示しています。<a href="https://portal.data.metro.tokyo.lg.jp/terms/">東京都オープンデータ利用規約</a>（<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC BY 4.0</a>）に基づき利用しています。</p>
-
-  <h2>6. 子どもの利用について</h2>
-  <p>本アプリは個人情報を収集しないため、年齢にかかわらず個人情報が取得されることはありません。</p>
-
-  <h2>7. 開示・削除の請求</h2>
-  <p>本アプリは利用者の個人情報を保持していないため、開示・訂正・削除の対象となる情報は存在しません。端末内に保存された情報は、利用者自身がアプリ内の操作または本アプリの削除によりいつでも消去できます。</p>
-
-  <h2>8. 本ポリシーの変更</h2>
-  <p>内容を変更する場合は、本ページに変更後の内容と最終更新日を掲載します。</p>
-
-  <h2>9. お問い合わせ</h2>
-  <p><a href="mailto:appstaro2026@gmail.com">appstaro2026@gmail.com</a></p>
-
-  <footer>
-    <a href="index.html">サポートページに戻る</a><br>
-    最終更新：2026年9月
-  </footer>
-</div>
+    <section>
+      <h2>収集する情報</h2>
+      <p>PLACE TRACEは、利用者の個人情報を開発者のサーバーへ収集・保存しません。</p>
+    </section>
+    <section>
+      <h2>端末内に保存する情報</h2>
+      <p>利用者が保存した地域の識別子は、アプリの機能を提供するため端末内に保存されます。この情報は開発者へ送信されません。</p>
+    </section>
+    <section>
+      <h2>位置情報</h2>
+      <p>位置情報は、利用者が現在地ボタンを押した場合に限り、端末上で一時的に使用します。位置履歴は保存せず、開発者のサーバーへ送信しません。地図表示にはApple MapKitを使用するため、Appleのサービスとの通信が発生します。</p>
+    </section>
+    <section>
+      <h2>外部サービス</h2>
+      <p>本アプリは広告SDK、分析SDK、開発者が運営するバックエンドを使用しません。アプリ内の出典リンクを開くと、リンク先サイトのプライバシーポリシーが適用されます。</p>
+    </section>
+    <section>
+      <h2>変更</h2>
+      <p>機能や法令の変更に応じて本ポリシーを更新する場合があります。重要な変更は、このページの施行日を更新して示します。</p>
+    </section>
+    <nav aria-label="関連ページ"><a href="index.html">サポートへ戻る</a></nav>
+    <footer>© 2026 PLACE TRACE</footer>
+  </main>
+</body>
 </html>
